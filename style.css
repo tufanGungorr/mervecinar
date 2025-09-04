@@ -201,6 +201,41 @@ h2.text-center {
 /* Footer */
 footer {
     background-color: #41322A; /* Koyu Kahve */
+    color: var(--bg-color);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-col h5 {
+    font-family: var(--heading-font);
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
 }
 
 /* Mobil Menu Düzenlemesi */
