@@ -1,0 +1,122 @@
+:root {
+    --bg-color: #FBF9F7; /* Krem Rengi Arka Plan */
+    --text-color: #5C4033; /* Koyu Kahve Metin */
+    --primary-color: #D97925; /* Ana Turuncu */
+    --secondary-color: #E8A87C; /* İkincil Açık Turuncu */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Hero Section & Nav */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 150px 0;
+    background: linear-gradient(rgba(44, 34, 28, 0.6), rgba(44, 34, 28, 0.6)), url('https://images.unsplash.com/photo-1477322524744-0eece9e79640?q=80&w=1950&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Content */
+.hero-content h1 {
+    font-family: var(--heading-font);
+}
+
+/* About on Hero Section */
+.about-on-hero {
+    background-color: rgba(251, 249, 247, 0.5);
+    color: var(--text-color);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-on-hero h2 {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+}
+
+.about-on-hero .img-fluid {
+    max-width: 250px;
+    border: 8px solid white;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #41322A; /* Koyu Kahve */
+}
+
+/* Mobil Menu Düzenlemesi */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(65, 50, 42, 0.95); /* Koyu Kahve - Hafif Şeffaf */
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
