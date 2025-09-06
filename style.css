@@ -83,7 +83,7 @@ h2.text-center {
 .about-on-hero {
     background-color: rgba(251, 249, 247, 0.5);
     color: var(--text-color);
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -94,7 +94,7 @@ h2.text-center {
 }
 
 .about-on-hero .img-fluid {
-    max-width: 250px;
+    max-width: 325px;
     border: 8px solid white;
 }
 
