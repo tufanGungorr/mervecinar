@@ -94,6 +94,7 @@ h2.text-center {
 }
 
 .about-on-hero .img-fluid {
+    width: 100%;
     max-width: 325px;
     border: 8px solid white;
 }
@@ -285,6 +286,13 @@ h2.text-center {
 /* About Page Specifics */
 .about-page-section .h1 {
     font-family: var(--heading-font);
+}
+
+.about-page-section .img-fluid {
+    width: 100%;
+    max-width: 350px;
+    border: 8px solid white;
+    margin: 0 auto;
 }
 
 .approach-section {
