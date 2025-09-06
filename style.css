@@ -199,43 +199,62 @@ h2.text-center {
 }
 
 /* Footer */
-footer {
+.site-footer {
     background-color: #41322A; /* Koyu Kahve */
-    color: var(--bg-color);
-    text-align: center;
-    padding: 2rem 0;
+    color: rgba(251, 249, 247, 0.7); /* Opak Krem Rengi */
+    padding: 4rem 0 0;
+    font-size: 0.9rem;
 }
 
-.footer-col h5 {
-    font-family: var(--heading-font);
-    color: white;
+.site-footer .footer-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.site-footer .footer-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #fff;
     margin-bottom: 1.5rem;
 }
 
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li a {
-    color: rgba(255, 255, 255, 0.7);
+.site-footer a {
+    color: rgba(251, 249, 247, 0.7);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-col ul li a:hover {
-    color: white;
+.site-footer a:hover {
+    color: #fff;
 }
 
-.social-icons a {
-    color: white;
+.site-footer .social-icons a {
+    display: inline-block;
+    color: #fff;
     font-size: 1.5rem;
     margin-right: 15px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover {
+.site-footer .social-icons a:hover {
     color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.site-footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    background-color: #352821; /* Daha Koyu Kahve */
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-bottom p {
+    color: rgba(251, 249, 247, 0.5);
 }
 
 /* Mobil Menu Düzenlemesi */
