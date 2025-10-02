@@ -165,7 +165,7 @@ h2.text-center {
 
 .blog-post .blog-post-title {
     font-family: var(--heading-font);
-    margin-bottom: 1.5rem; /* Add space below the title */
+    margin-bottom: 1.5rem;
 }
 
 .blog-post-image {
@@ -193,7 +193,6 @@ h2.text-center {
         margin-bottom: 1.5rem;
     }
 }
-
 
 .btn-outline-primary {
     color: var(--primary-color);
@@ -477,10 +476,11 @@ h2.text-center {
 }
 
 .blog-carousel-card {
-    width: 90%;
-    max-width: 350px; /* Max width for cards on mobile */
+    width: 100%;
+    max-width: 400px; /* Max width for cards on mobile */
     margin-bottom: 1.5rem;
     white-space: normal;
+    display: inline-block; /* Allow margin auto to center */
 }
 
 .blog-carousel-track:hover {
@@ -516,6 +516,7 @@ h2.text-center {
     .blog-carousel-track {
         display: flex;
         flex-direction: row;
+        align-items: stretch; /* Ensure equal height on desktop */
         animation: blog-scroll 40s linear infinite;
     }
 
